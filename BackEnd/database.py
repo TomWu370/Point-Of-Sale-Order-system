@@ -28,19 +28,76 @@ conn.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \
 conn.commit()
 print("Records created successfully")
 conn.close()
+# CREATE
+def Create(selection, origin, condition):
+    query = "SELECT xxx FROM xxx WHERE xxx"
+    conn = sqlite3.connect('test.db')
+    return conn.execute(query)
+      
+def createTempOrder():
+      return pass
+def createConfirmedOrder():
+      return pass
+def createNewCustomer():
+      return pass
+# Extra def createAmendment():
 
-def Fetch(selection, origin, condition):
+# READ
+def Read(query):
     query = "SELECT xxx FROM xxx WHERE xxx"
     conn = sqlite3.connect('test.db')
     return conn.execute(query)
 
+def getCategories():
+      # return dictionary with category name as key, and their category item as list value
+      return pass
+def getProductData():
+      return pass
+def getProductSides():
+      return pass
+def getOrderData():
+      return pass
+def getTempOrderData():
+      return pass
+def getCustomerData():
+      return pass
+def getAmendments():
+      return pass
+def getOrderHistory(dateRange):
+      return pass
+def getExistCaller(phoneNumber):
+      # return boolean if exist
+      return pass
+      
+# UPDATE
 def Update(query):
     conn = sqlite3.connect('test.db')
     return conn.execute(query)
 
+def updateTemporaryOrder(newTempData):
+      return pass
+def updateConfirmedOrder(newConfData):
+      return pass
+def updateCustomer():
+      return pass
+def updateTempToConfirmed(orderID):
+      return pass
+      
+# DELETE
 def Delete(query):
     conn = sqlite3.connect('test.db')
     return conn.execute(query)
+
+def deleteTempOrder():
+      return pass
+def deleteConfOrder():
+      return pass
+def deleteTempOrderData():
+      return pass
+def deleteConfOrderData():
+      return pass
+def deleteCustomer():
+      return pass
 
 # simplify queries into actual valid/common operations
 # specific method to fetch product information
